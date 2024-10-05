@@ -13,7 +13,7 @@ namespace Blog.Blog.Infrastructure.Persistence.Repositories
             _db = db;
         }
 
-        public void Add(string Name, string Description, string? Author)
+        public async void Add(string Name, string Description, string? Author)
         {
             var blogData = new BlogData()
             {
